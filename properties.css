@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    width: 100%;
+    padding: 2% 6%;
+    height: 100vh;  
+    overflow-x: hidden;
+    background-color: black;
+}
+#home_page{
+    width: 100%;
+    height: 99%; 
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;    
+}
+#div1{
+    width: 20%;
+}
+#div2{
+    width: 80%;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: end;   
+}
+
+#div2 div {
+    margin-left: 1em;
+    display: flex;  
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+#div2 h3{
+   margin: 0;
+   display: inline-block;
+   font-size: 1.4em;
+   color: white;
+}
+
+#div2 i{
+    margin-left: .3em;
+    color: gold;
+}
+
+#div3{
+    width: 20%;
+    padding-top: 4%;
+    
+}
+#home_page .nav-item{
+    color: white;   
+}
+#collapsible ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid,#home_page a.nav-link{
+    padding-right: 0;
+    padding-left: 0;
+    color:inherit;
+}
+#home_page a.nav-link.active_page{
+    color: gold;
+}
+#home_page .nav-item:hover{
+    color: blue;
+    font-weight: 700;
+}
+#home_page .nav-item .active_page:hover{
+    color: gold;
+    font-weight: 400;
+}
+
+
+
+
+
+
+#div4{
+    width: 75%;
+    margin-left: 5%;    
+}
+#div4 > h2:nth-child(1){
+    color: white;
+}
+#div4 > h2:nth-child(1) span{
+    color: gold;
+}
+#div4 > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#div4 > div:nth-child(2) > div:nth-child(1) a{
+    text-decoration: none;    
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-right: .5em;
+}
+#div4 > div:nth-child(2) > div:nth-child(1) a.active_tab{
+    background-color: white;
+    color: black;
+}
+#hns1{
+    display: none;
+}
+.filterplus{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+.filterplus i{
+    background-color: aliceblue;
+    color: aqua;
+    position: relative;
+   
+}
+#fiter a{
+    text-decoration: none;
+}
+#filter{
+    background-color: white;      
+    width: 100%;
+    display: none;
+    height: 0;
+    overflow-y: visible;
+    z-index: 1;
+    position: relative;
+    position: absolute;
+    width: 50%;
+}
+#filter:target{
+    display: block;
+}
+#filter h3{
+    color: gold;
+    font-size: 1.5em;
+}
+#filter a{
+    text-decoration: none;
+    color: black;
+}
+#filter h4{
+    display: flex;
+    justify-content: space-between;
+    color: aqua;
+}
+#filter div{
+    background-color: white;
+    padding: 10px; 20px;
+   
+}
+#filter i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+#rent_buy_sell{
+    position: relative;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+#rent_buy_sell::-webkit-scrollbar{
+    display: none;
+}
+#rent,#buy,#sell{
+    margin-top: 1em;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#rent{
+    display: flex;
+}
+#rent:target,#buy:target,#sell:target{
+    display: flex;
+}
+.cards{
+    background-color: white;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:2em;
+    border-radius: 20px;
+    
+}
+.cards div:nth-child(1){   
+    width: 30%;
+}
+.cards div:nth-child(2){   
+    width: 60%;
+    align-self: flex-start;
+}
+.cards div img{
+    width: 100%;
+    padding: 10% 0;
+    
+}
+.cards h1,.cards h3{  
+    display: inline-block;
+}
+.cards h1{
+    color: gold;
+    font-size: 1.5em;
+}
+
+.cards div:nth-child(2) > h3{
+    font-size: .9em;
+    color: gray;
+}
+
+.cards div:nth-child(2) > h3{
+    display: flex;
+    justify-content: space-between;
+}
+.cards div:nth-child(2) > h3:nth-child(3) span:nth-child(2){
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.cards h6{
+    text-align: end;
+    margin-bottom: 0;
+    margin-top: 1em;
+    
+}
+.cards h6 a{
+    text-decoration: none;
+    background-color:blue;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+
+
+
+#div5{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+#div5 i{
+    margin-bottom: .3em;
+    color: white;
+}
+
+footer h4{
+    font-size: 1em;
+    margin: 0;
+    color:gainsboro;
+}
+footer span{
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width:767px){
+
+    .navbar-toggler{
+        color: white;
+        font-weight: 600;
+    }
+    body{
+        height: unset;
+    }
+    #home_page{
+        width: 100%;
+        margin-right: 6%;
+        margin-right: 0;
+    }
+    #div2{
+        order: 4;       
+    }
+    #div3{
+        width: 80%;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        
+    }
+    nav{
+        width: 100%;
+        text-align: end;
+        position: relative;       
+        height: 0em;
+        
+        
+    }
+    .navbar-toggler{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: none;
+        padding: 0;
+        border: none;
+        
+    }
+    .nav-item{
+        z-index: 1;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .container-fluid{
+        margin-top: 1em;
+        
+    }
+    
+    
+    
+    .cards{
+        padding: 10px 0;
+    }
+    
+    #div4{
+        margin-top: 4em;
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .cards h1{
+        color: gold;
+        font-size: 1.0em;
+    }
+
+    .cards div:nth-child(2) > h3{
+        font-size: .9em;
+        color: gray;
+    }
+
+    .cards div:nth-child(2) > h3{
+        display: flex;
+        justify-content: space-between;
+        font-size: .65em;
+    }
+    .cards div:nth-child(2) > h3:nth-of-type(2){
+        margin-bottom: 0;
+    }
+    .cards div:nth-child(2) > h3:nth-child(3) span:nth-child(2){
+        background-color: black;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+    .cards h6{
+        margin-top: .2em;
+    }
+    .cards h6 a{
+        font-size: .7em;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #div5{
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        left: unset;
+        bottom: unset;
+        order: 5;
+    }
+    #div5 i{
+        margin-right: 1em;
+    }
+    #div2{
+        margin-top: 4em;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 100%;
+        
+    }
+    #div2 div{
+        margin-left: 0;
+        margin-bottom: .5em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    #div2 div h3{
+        order: 2;
+        font-size: 1.1em;
+                 
+    }
+    #div2 i{
+        margin-left: 0;
+        order: 1;   
+        margin-right: .5em;
+    }
+    footer{
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width:600px){
+    body{
+        height: unset;
+    }
+    #div4{
+        width: 100%;
+        margin-left: 0%;    
+    }
+
+    #div4 > div:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    #div4 > div:nth-child(2) >div:nth-child(1){
+        width: 85%;
+    }
+    #div4 > div:nth-child(2) >div:nth-child(2){
+        width: 15%;
+    }
+    #hns1{
+        display: inline;
+    }
+    #hns2{
+        display: none;
+    }
+    .filterplus{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        position: relative;
+    }
+    .filterplus i{
+        background-color: aliceblue;
+        color: aqua;
+        position: relative;
+
+    }
+    #fiter a{
+        text-decoration: none;
+    }
+    #filter{
+        background-color: white;      
+        width: 100%;
+        display: none;
+        height: 0;
+        overflow-y: visible;
+        z-index: 1;
+        position: absolute;
+       
+    }
+    #filter:target{
+        display: block;
+    }
+    #filter h3{
+        color: gold;
+        font-size: 1.5em;
+    }
+    #filter a{
+        text-decoration: none;
+        color: black;
+    }
+    #filter h4{
+        display: flex;
+        justify-content: space-between;
+        color: aqua;
+    }
+    #filter div{
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 0px;       
+        width: 100%;
+    }
+    #filter i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #rent_buy_sell{
+        position: relative;
+        height: unset;
+        overflow-y: visible;
+    }
+
+    #rent_buy_sell::-webkit-scrollbar{
+        display: none;
+    }
+    #rent,#buy,#sell{
+        margin-top: 1em;
+        width: 100%;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #rent{
+        display: flex;
+    }
+    #rent:target,#buy:target,#sell:target{
+        display: flex;
+    }
+    .cards{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom:2em;
+        border-radius: 20px;
+
+    }
+    .cards div:nth-child(1){   
+        width: 30%;
+    }
+    .cards div:nth-child(2){   
+        width: 60%;
+        align-self: flex-start;
+    }
+    .cards div img{
+        width: 100%;
+        padding: 10% 0;
+
+    }
+    .cards h1,.cards h3{  
+        display: inline-block;
+    }
+    .cards h1{
+        color: gold;
+        font-size: 1.0em;
+    }
+
+    .cards div:nth-child(2) > h3{
+        font-size: .9em;
+        color: gray;
+    }
+
+    .cards div:nth-child(2) > h3{
+        display: flex;
+        justify-content: space-between;
+        font-size: .8em;
+    }
+    .cards div:nth-child(2) > h3:nth-child(3) span:nth-child(2){
+        background-color: black;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+    .cards{
+        padding: 10px 0;
+    }
+    .cards h6{
+        margin-top: .5em;
+    }
+    .cards h6 a{
+        font-size: .7em;
+    }
+}
